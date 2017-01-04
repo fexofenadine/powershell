@@ -1,4 +1,5 @@
 # Script for Host/Cluster Capacity output of VMWare VCenters
+# ****Should be run from PowerCLI****
 # Written by Hugh Patterson
 # Last updated 07/04/2016
 
