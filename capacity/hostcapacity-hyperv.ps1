@@ -64,5 +64,5 @@ $msg.Subject = -join("$env:USERDOMAIN"," Hyper-V Capacity Report ",(Get-Date).to
 $msg.Body = "This is a test"
 $msg.Attachments.Add($att)
 $smtp.Send($msg)
-#@$att.Dispose()
+@$att.Dispose()
 
