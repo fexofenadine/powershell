@@ -54,15 +54,15 @@ echo "Report from $vmmserver completed."
 
 
 # Email the report home **not working yet**
-#$smtpServer = "XXXX"
+$smtpServer = "XXXX"
 #$att = new-object Net.Mail.Attachment($filename)
-#$msg = new-object Net.Mail.MailMessage
-#$smtp = new-object Net.Mail.SmtpClient($smtpServer)
+$msg = new-object Net.Mail.MailMessage
+$smtp = new-object Net.Mail.SmtpClient($smtpServer)
 #$msg.From = "hugh.blah@XXXXXX"
 #$msg.To.Add("recipient@XXXXX")
 #$msg.Subject = -join("$env:USERDOMAIN"," Hyper-V Capacity Report ",(Get-Date).tostring("MMMM"))
 #$msg.Body = "This is a test"
 #$msg.Attachments.Add($att)
-#$smtp.Send($msg)
+$smtp.Send($msg)
 #@$att.Dispose()
 
