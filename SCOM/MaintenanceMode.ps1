@@ -25,7 +25,7 @@ function Check_MM ($servers) {
         $tempobject = Get-SCOMClassInstance -Name $server
         New-Object psobject -property @{
             ComputerName=$server
-            MaintenanceModeLastModified=$tempobject.MaintenanceModeLastModified[2].tolocaltime()
+            MaintenanceModeLastModified=$tempobject.MaintenanceModeLastModified[-1].tolocaltime()
             InMaintenanceMode=$tempobject.InMaintenanceMode[0]
         }
     }
