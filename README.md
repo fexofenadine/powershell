@@ -7,6 +7,12 @@ My Windows Powershell scripts repository
 /dns
   - contains scripts for exporting and modifying the DNS servers of a server list.
   
+/filesystem
+  Start-Calibre.ps1: maps a disk on startup of calibre and unmounts it when the the calibre.exe process/app is closed
+
+/id3tag
+  - contains id3 tag manipulation scripts
+  
 /listservers
   - contains a script for listing every Windows server in your domain.
  
